@@ -35,5 +35,12 @@ public class MiHashSet
     public void clear(){
         numeros.clear();
     }
+    
+    /**
+     * 
+     */
+    public void contains(int valor){
+        numeros.contains(valor);
+    }
 
 }

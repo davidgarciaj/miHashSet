@@ -60,14 +60,14 @@ public class MiHashSet
         }
         return exist;
     }
-    
+
     /**
      * 
      */
     public int size(){
-    return numeros.size();
+        return numeros.size();
     }
-    
+
     /**
      * 
      */
@@ -79,5 +79,19 @@ public class MiHashSet
         }
         collection+= "]";
         return collection;
+    }
+
+    /**
+     * 
+     */
+    public boolean equals(MiHashSet otroConjunto){
+        boolean equals = true;
+        if((size() != otroConjunto.size())){ equals = false;}
+        for(int i = 0; i < size(); i++){            
+            if(!otroConjunto.contains(numeros.get(i))){
+                equals = false;
+            }
+        }
+        return equals;
     }
 }

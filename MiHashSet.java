@@ -39,8 +39,8 @@ public class MiHashSet
     /**
      * 
      */
-    public void contains(int valor){
-        numeros.contains(valor);
+    public boolean contains(int valor){
+        return numeros.contains(valor);
     }
 
     /**
@@ -53,10 +53,18 @@ public class MiHashSet
     /**
      * 
      */    
-    public remove(int elemento){
+    public boolean remove(int elemento){
         boolean exist = contains(elemento);
         if(exist){
             numeros.remove(numeros.indexOf(elemento));
         }
+        return exist;
+    }
+    
+    /**
+     * 
+     */
+    public int size(){
+    return numeros.size();
     }
 }

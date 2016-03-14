@@ -17,7 +17,7 @@ public class MiHashSet
     {
         numeros = new ArrayListInt();
     }
-    
+
     /**
      * 
      */
@@ -28,25 +28,35 @@ public class MiHashSet
         }
         return !exist;
     }
-    
+
     /**
      * 
      */
     public void clear(){
         numeros.clear();
     }
-    
+
     /**
      * 
      */
     public void contains(int valor){
         numeros.contains(valor);
     }
-    
+
     /**
      * 
      */
     public boolean isEmpty(){
         return numeros.isEmpty();
+    }
+
+    /**
+     * 
+     */    
+    public remove(int elemento){
+        boolean exist = contains(elemento);
+        if(exist){
+            numeros.remove(numeros.indexOf(elemento));
+        }
     }
 }

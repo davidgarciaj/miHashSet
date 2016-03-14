@@ -42,5 +42,11 @@ public class MiHashSet
     public void contains(int valor){
         numeros.contains(valor);
     }
-
+    
+    /**
+     * 
+     */
+    public boolean isEmpty(){
+        return numeros.isEmpty();
+    }
 }

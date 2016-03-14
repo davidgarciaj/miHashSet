@@ -67,4 +67,17 @@ public class MiHashSet
     public int size(){
     return numeros.size();
     }
+    
+    /**
+     * 
+     */
+    public String toString(){
+        String collection = "[";
+        for(int i = 0; i < size(); i++){
+            if(!collection.equals("[")){collection+= ", ";}
+            collection+= numeros.get(i);
+        }
+        collection+= "]";
+        return collection;
+    }
 }
